@@ -1,54 +1,70 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #e0f2f7; 
+    background: linear-gradient(to bottom right, #B9E2EC 0%, #E6F5F9 50%, white 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  /* makes it cover smoothly while scrolling */
+    background-size: cover;       /* ensures no repeat, fills entire screen */
     color: #333;
     transition: background 0.3s, color 0.3s;
 }
+
+
+
+/* ... rest of your CSS ... */
 .dark-mode {
-    background: #1e1e1e; 
+    background: #1e1e1e;
     color: #f5f5f5;
-}
+} 
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: hsl(189, 42%, 76%);
+    background: #B1D1DA
+;
     padding: 10px 20px;
     color: #333;
     transition: background 0.3s, color 0.3s;
 }
+
 .dark-mode .navbar {
-    background: hsl(0, 0%, 20%);
+    background: #30302F;
     color: #f5f5f5;
 }
+
 .logo-container {
     position: relative;
     display: inline-block;
     height: 50px;
     width: auto;
 }
+
 .logo-container .logo {
     height: 50px;
     width: auto;
-    mix-blend-mode: normal;
     position: absolute;
     top: 0;
     left: 0;
     transition: opacity 0.3s;
 }
+
 .logo-container .light-logo {
     opacity: 1;
 }
+
 .logo-container .dark-logo {
     opacity: 0;
 }
+
 .dark-mode .light-logo {
     opacity: 0;
 }
+
 .dark-mode .dark-logo {
     opacity: 1;
 }
+
 .site-name {
     font-size: 1.8rem;
     font-weight: bold;
@@ -56,14 +72,17 @@ body {
     color: #333;
     transition: color 0.3s;
 }
+
 .dark-mode .site-name {
     color: #f5f5f5;
 }
+
 .nav-right {
     display: flex;
     align-items: center;
     gap: 15px;
 }
+
 .nav-right a {
     text-decoration: none;
     color: #333;
@@ -71,9 +90,11 @@ body {
     font-family: 'Times New Roman', Times, serif;
     transition: color 0.3s;
 }
+
 .dark-mode .nav-right a {
-    color: #f5f5f5; 
+    color: #f5f5f5;
 }
+
 #mode-toggle {
     background: white;
     border: none;
@@ -83,10 +104,12 @@ body {
     font-size: 1rem;
     transition: background 0.3s, color 0.3s;
 }
+
 .dark-mode #mode-toggle {
     background: #555;
     color: #f5f5f5;
 }
+
 .corner-cat-container {
     position: fixed;
     bottom: 10px;
@@ -94,8 +117,8 @@ body {
     width: 80px;
     height: 80px;
     z-index: 1000;
-    mix-blend-mode: multiply;
 }
+
 .corner-cat-container .cat {
     width: 100%;
     height: 100%;
@@ -103,17 +126,20 @@ body {
     top: 0;
     left: 0;
     transition: opacity 0.3s;
-    mix-blend-mode: multiply;
 }
+
 .corner-cat-container .light-cat {
     opacity: 1;
 }
+
 .corner-cat-container .dark-cat {
     opacity: 0;
 }
+
 .dark-mode .light-cat {
     opacity: 0;
 }
+
 .dark-mode .dark-cat {
     opacity: 1;
 }

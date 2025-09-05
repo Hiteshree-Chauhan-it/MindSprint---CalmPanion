@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calm Journal</title>
+    <link rel="stylesheet" href="journal.css">
+</head>
+<body>
+    <a href="index.html" class="back-btn">← Back</a>
+    <div id="notification"></div>
+    <div class="journal">
+    <div class="toggle-area">
+    <label>
+        <input type="radio" name="mode" value="write" checked>
+        Write Your Thoughts
+    </label>
+    <label>
+        <input type="radio" name="mode" value="doodle">
+        Doodle
+    </label>
+    </div>
+    <textarea id="thoughts" placeholder="Write your thoughts here..."></textarea>
+    <div id="doodleSection" class="hidden">
+        <h2 class="doodle-heading">🖊️ Scribble your anger out</h2>
+        <canvas id="doodleCanvas"></canvas>
+        <button id="clearBtn">Clear</button>
+    </div>
+    </div>
+
+    <script src="journal.js"></script>
+</body>
+</html>
