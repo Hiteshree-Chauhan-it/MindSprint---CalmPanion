@@ -1,0 +1,55 @@
+/* Base styling */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #e0f2f7, #fff);
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  background-repeat: no-repeat;
+}
+
+header {
+  margin-bottom: 20px;
+}
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  color: #B1D1DA;;
+}
+header p {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+/* Image card */
+.image-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  display: inline-block;
+  transition: transform 0.3s;
+}
+.image-card:hover {
+  transform: translateY(-5px);
+}
+.image-card img {
+  width: 380px;
+  max-width: 90%;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.caption {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Footer */
+footer {
+  margin-top: 25px;
+  font-size: 0.9rem;
+  color: #777;
+}

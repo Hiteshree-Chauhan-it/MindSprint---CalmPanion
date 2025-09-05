@@ -1,93 +1,49 @@
+/* General Body Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom right, #B9E2EC 0%, #E6F5F9 50%, white 100%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: #B9E2EC;
     color: #333;
-    transition: background 0.3s, color 0.3s;
 }
 
-.dark-mode {
-    background: #1e1e1e;
-    color: #f5f5f5;
-}
-
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #B1D1DA;
+    background: #7EAAB9; /* RGB(126,170,185) */
     padding: 10px 20px;
-    color: #333;
-    transition: background 0.3s, color 0.3s;
+    /* mix-blend-mode: multiply; */
+    
 }
 
-.dark-mode .navbar {
-    background: #30302F;
-    color: #f5f5f5;
-}
-
-.logo-container {
-    position: relative;
-    display: inline-block;
-    height: 50px;
-    width: auto;
-}
-
+/* Logo */
 .logo-container .logo {
     height: 50px;
     width: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 0.3s;
+    
 }
 
-.logo-container .light-logo { opacity: 1; }
-.logo-container .dark-logo { opacity: 0; }
-.dark-mode .light-logo { opacity: 0; }
-.dark-mode .dark-logo { opacity: 1; }
 
+#logo{
+    mix-blend-mode: multiply;
+}
+/* Site name */
 .site-name {
     font-size: 1.8rem;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     color: #333;
-    transition: color 0.3s;
-}
-.dark-mode .site-name { color: #f5f5f5; }
-
-.nav-right {
-    display: flex;
-    align-items: center;
-    gap: 15px;
 }
 
+/* Nav links */
 .nav-right a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-    transition: color 0.3s;
-}
-.dark-mode .nav-right a { color: #f5f5f5; }
-
-#mode-toggle {
-    background: white;
-    border: none;
-    padding: 6px 12px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background 0.3s, color 0.3s;
-}
-.dark-mode #mode-toggle {
-    background: #555;
-    color: #f5f5f5;
 }
 
+/* Cat Image */
 .corner-cat-container {
     position: fixed;
     bottom: 10px;
@@ -95,22 +51,16 @@ body {
     width: 80px;
     height: 80px;
     z-index: 1000;
+    mix-blend-mode: multiply;
 }
 
 .corner-cat-container .cat {
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 0.3s;
+    
 }
 
-.corner-cat-container .light-cat { opacity: 1; }
-.corner-cat-container .dark-cat { opacity: 0; }
-.dark-mode .light-cat { opacity: 0; }
-.dark-mode .dark-cat { opacity: 1; }
-
+/* Feature Gallery */
 .feature-gallery {
     padding: 60px 20px;
     background: linear-gradient(135deg, #d6f2f6 0%, #ffffff 100%);
@@ -133,6 +83,7 @@ body {
     align-items: center;
 }
 
+/* Feature Card */
 .feature-card {
     width: 80%;
     max-width: 900px;
@@ -145,9 +96,9 @@ body {
     cursor: pointer;
     overflow: hidden;
     position: relative;
-    text-decoration: none; /* remove underline */
-    color: inherit; /* keep text color */
-    display: block; /* allow full card to be clickable */
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .feature-card:hover {
@@ -171,12 +122,11 @@ body {
     margin-bottom: 15px;
 }
 
-/* Scale image on card hover */
 .feature-card:hover .image-wrapper img {
     transform: scale(1.08);
 }
 
-/* Float elements */
+/* Float elements animation */
 .float-elements {
     position: absolute;
     top: 0;
@@ -213,7 +163,7 @@ body {
     100% { transform: translate(-50%, -120px) scale(1.2); opacity: 0; }
 }
 
-/* Fade in title and description on card hover */
+/* Fade in title and description on hover */
 .feature-card h3,
 .feature-card > p {
     opacity: 0;
@@ -238,13 +188,7 @@ body {
     padding: 0 8px;
 }
 
-.dark-mode .feature-info {
-    background: #30302F;
-    color: #f5f5f5;
-}
-
 @media (max-width: 768px) {
-    .section-title { font-size: 2rem; }
     .feature-card { width: 95%; padding: 30px 15px; }
     .image-wrapper img { width: 140px; height: 140px; }
 }

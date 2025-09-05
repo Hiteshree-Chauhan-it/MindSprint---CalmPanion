@@ -1,17 +1,4 @@
-const toggleBtn = document.getElementById('mode-toggle');
-const logo = document.getElementById('logo');
-
-toggleBtn.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    if (document.body.classList.contains('dark-mode')) {
-        toggleBtn.textContent = "☀️";
-        logo.src = "images/frontlogo2.png";
-    } else {
-        toggleBtn.textContent = "🌙";
-        logo.src = "images/frontlogo1.png";
-    }
-});
-
+// 3D hover effect for all feature cards
 const cards = document.querySelectorAll(".feature-card");
 
 cards.forEach(card => {
@@ -25,7 +12,16 @@ cards.forEach(card => {
         const rotateY = ((x - centerX) / centerX) * -8;
         card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
     });
+
     card.addEventListener("mouseleave", () => {
         card.style.transform = "rotateX(0) rotateY(0) scale(1)";
     });
+
+    // Redirect to chat.html if RightCat.jpg is clicked
+    const img = card.querySelector("img");
+    if (img && img.src.includes("RightCat.jpg")) {
+        card.addEventListener("click", () => {
+            window.location.href = "chat.html";
+        });
+    }
 });
