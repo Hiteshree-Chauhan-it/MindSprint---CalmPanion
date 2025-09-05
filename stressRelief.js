@@ -1,4 +1,4 @@
-const circleContainer = document.querySelector(".circle-options");
+// const circleContainer = document.querySelector(".circle-options");
 const circles = document.querySelectorAll(".circle-btn");
 
 const radius = 280;
