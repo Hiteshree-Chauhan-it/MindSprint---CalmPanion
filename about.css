@@ -1,0 +1,79 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* Body */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #d7f2f7, #fff);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background: #a6dcef;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar h1 a {
+  text-decoration: none;
+  color: #222;
+}
+.navbar nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+.navbar nav a.active {
+  border-bottom: 2px solid #333;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 30px 20px;
+  background: #d0f0f7;
+}
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Content */
+.content {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+.content section {
+  margin-bottom: 25px;
+}
+.content h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+.content p, .content ul {
+  font-size: 1rem;
+  color: #444;
+}
+.content ul {
+  margin-left: 20px;
+  list-style-type: "✨ ";
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #a6dcef;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #444;
+}
