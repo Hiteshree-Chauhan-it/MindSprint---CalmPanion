@@ -6,7 +6,7 @@
 }
 
 body {
-  /* background: #e0f2f7; */
+  background: #e0f2f7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,6 +31,25 @@ body {
   height: 200px;
   border-radius: 50%;
   opacity: 0.9;
+}
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #2c3e50;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 1000;
+}
+
+.back-button:hover {
+    background-color: rgba(255,255,255,0.4);
+    transform: scale(1.05);
 }
 
 .circle-options {
