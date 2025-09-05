@@ -94,6 +94,7 @@ body {
     width: 80px;
     height: 80px;
     z-index: 1000;
+    mix-blend-mode: multiply;
 }
 .corner-cat-container .cat {
     width: 100%;
