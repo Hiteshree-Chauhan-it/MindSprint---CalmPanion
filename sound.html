@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CalmPanion – Soft Sounds</title>
+  <link rel="stylesheet" href="sound.css">
+</head>
+<body>
+
+  <h1>🌿 CalmPanion – Soft Sounds 🌿</h1>
+
+  <div class="sound-grid">
+    <!-- Rain Sound -->
+    <div class="sound-card">
+      <img src="images/raini.jpg" alt="Rain">
+      <div class="description">Rain Sound </div>
+      <div class="sound-center" onclick="toggleSound(this, 'rain')">
+        <span>▶</span>
+        <div class="pulse" style="display:none;"></div>
+      </div>
+      <div class="controls">
+        <button onclick="playSound('rain')">Play</button>
+        <button onclick="pauseSound('rain')">Pause</button>
+        <button onclick="toggleLoop('rain')">Loop</button>
+        <input type="range" min="0" max="1" step="0.1" onchange="setVolume('rain', this.value)">
+      </div>
+      <audio id="rain" src="sounds/Rain Sound Effect.mp3"></audio>
+    </div>
+
+    <!-- Waves Sound -->
+    <div class="sound-card">
+      <img src="images/oceani.jpg" alt="Waves">
+      <div class="description">Ocean Waves – Relax & Flow</div>
+      <div class="sound-center" onclick="toggleSound(this, 'waves')">
+        <span>▶</span>
+        <div class="pulse" style="display:none;"></div>
+      </div>
+      <div class="controls">
+        <button onclick="playSound('waves')">Play</button>
+        <button onclick="pauseSound('waves')">Pause</button>
+        <button onclick="toggleLoop('waves')">Loop</button>
+        <input type="range" min="0" max="1" step="0.1" onchange="setVolume('waves', this.value)">
+      </div>
+      <audio id="waves" src="sounds/ocean_wave_sound.mp3"></audio>
+    </div>
+
+    <!-- Forest Sound -->
+    <div class="sound-card">
+      <img src="images/foresti.jpg" alt="Forest">
+      <div class="description">Forest – Birds & Breeze</div>
+      <div class="sound-center" onclick="toggleSound(this, 'forest')">
+        <span>▶</span>
+        <div class="pulse" style="display:none;"></div>
+      </div>
+      <div class="controls">
+        <button onclick="playSound('forest')">Play</button>
+        <button onclick="pauseSound('forest')">Pause</button>
+        <button onclick="toggleLoop('forest')">Loop</button>
+        <input type="range" min="0" max="1" step="0.1" onchange="setVolume('forest', this.value)">
+      </div>
+      <audio id="forest" src="sounds/forest_sounds.mp3"></audio>
+    </div>
+
+    <div class="sound-card">
+      <img src="images/tb bowl.jpeg" alt="Fireplace">
+      <div class="description">Tibetan Singing Bowls</div>
+      <div class="sound-center" onclick="toggleSound(this, 'fire')">
+        <span>▶</span>
+        <div class="pulse" style="display:none;"></div>
+      </div>
+      <div class="controls">
+        <button onclick="playSound('fire')">Play</button>
+        <button onclick="pauseSound('fire')">Pause</button>
+        <button onclick="toggleLoop('fire')">Loop</button>
+        <input type="range" min="0" max="1" step="0.1" onchange="setVolume('fire', this.value)">
+      </div>
+      <audio id="fire" src="sounds/tib_singing_bowls_2.mp3"></audio>
+    </div>
+  </div>
+<script src="sound.js"></script>
+</body>
+</html>
