@@ -1,0 +1,9 @@
+div{
+    display: flex;
+height: 3px; 
+background-color: black; 
+width: 50%; 
+justify-content: center;
+align-items: center;
+
+}
