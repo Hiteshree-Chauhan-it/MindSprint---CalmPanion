@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(135deg, #e0f2f7 0%, #a7d3db 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.meditation-container {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: rgba(255,255,255,0.2);
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 1000;
+}
+
+.back-button:hover {
+    background-color: rgba(255,255,255,0.4);
+    transform: scale(1.05);
+}
+
+
+.circle-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.circle {
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle at center, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.1) 70%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 7s ease-in-out, box-shadow 7s ease-in-out;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.722);
+}
+
+.circle p {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+#timer {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 50px rgba(255,255,255,0.4); }
+    50% { box-shadow: 0 0 90px rgba(255,255,255,0.6); }
+    100% { box-shadow: 0 0 50px rgba(255,255,255,0.4); }
+}
+
+.circle.pulse {
+    animation: pulseGlow infinite ease-in-out;
+}

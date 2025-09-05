@@ -1,53 +1,79 @@
-/* General Styling */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #e0f2f7;
+    background: #e0f2f7; 
     color: #333;
+    transition: background 0.3s, color 0.3s;
 }
-
-
-
-/* Navbar */
+.dark-mode {
+    background: #1e1e1e; 
+    color: #f5f5f5;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #a7d3db;
     padding: 10px 20px;
-    color: white;
-} 
-
-/* Logo */
-.logo img {
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+.dark-mode .navbar {
+    background: #333;
+    color: #f5f5f5;
+}
+.logo-container {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: auto;
+}
+.logo-container .logo {
     height: 50px;
     width: auto;
     mix-blend-mode: multiply;
-   
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s;
 }
-
-/* Center Website Name */
+.logo-container .light-logo {
+    opacity: 1;
+}
+.logo-container .dark-logo {
+    opacity: 0;
+}
+.dark-mode .light-logo {
+    opacity: 0;
+}
+.dark-mode .dark-logo {
+    opacity: 1;
+}
 .site-name {
     font-size: 1.8rem;
     font-weight: bold;
-    font-family:'Times New Roman';
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+    transition: color 0.3s;
 }
-
-/* Right Section */
+.dark-mode .site-name {
+    color: #f5f5f5;
+}
 .nav-right {
     display: flex;
     align-items: center;
     gap: 15px;
 }
-
 .nav-right a {
     text-decoration: none;
-    color: white;
+    color: #333;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
+    transition: color 0.3s;
 }
-
-
+.dark-mode .nav-right a {
+    color: #f5f5f5; 
+}
 #mode-toggle {
     background: white;
     border: none;
@@ -55,30 +81,38 @@ body {
     border-radius: 6px;
     cursor: pointer;
     font-size: 1rem;
+    transition: background 0.3s, color 0.3s;
 }
-
-/* Dark Mode Styles */
-.dark-mode {
-    background: #1e1e1e;
+.dark-mode #mode-toggle {
+    background: #555;
     color: #f5f5f5;
 }
-
-.navbar{
-    background: #333; 
-}
-
-.dark-mode .nav-right a {
-    color: #f5f5f5;
-}
-
-
-/* Cat Image in Corner */
-.corner-cat {
+.corner-cat-container {
     position: fixed;
     bottom: 10px;
     right: 10px;
-    width: 80px;   /* adjust size */
-    height: auto;
-    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    z-index: 1000;
+}
+.corner-cat-container .cat {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s;
     mix-blend-mode: multiply;
+}
+.corner-cat-container .light-cat {
+    opacity: 1;
+}
+.corner-cat-container .dark-cat {
+    opacity: 0;
+}
+.dark-mode .light-cat {
+    opacity: 0;
+}
+.dark-mode .dark-cat {
+    opacity: 1;
 }
