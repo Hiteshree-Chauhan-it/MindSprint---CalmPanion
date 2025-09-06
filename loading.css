@@ -88,11 +88,11 @@ body {
     opacity: 0.8;
   }
   50% {
-    transform: translate(-50%, -50%) scale(15); /* enough to cover screen */
+    transform: translate(-50%, -50%) scale(15);
     opacity: 0.5;
   }
   100% {
-    transform: translate(-50%, -50%) scale(40); /* ensure full screen */
+    transform: translate(-50%, -50%) scale(40);
     opacity: 0;
   }
 }

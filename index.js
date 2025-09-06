@@ -1,4 +1,3 @@
-// 3D hover effect for all feature cards
 const cards = document.querySelectorAll(".feature-card");
 
 cards.forEach(card => {
@@ -16,8 +15,6 @@ cards.forEach(card => {
     card.addEventListener("mouseleave", () => {
         card.style.transform = "rotateX(0) rotateY(0) scale(1)";
     });
-
-    // Redirect to chat.html if RightCat.jpg is clicked
     const img = card.querySelector("img");
     if (img && img.src.includes("RightCat.jpg")) {
         card.addEventListener("click", () => {

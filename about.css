@@ -1,15 +1,10 @@
-/* Reset */
 * { margin: 0; padding: 0; box-sizing: border-box; }
-
-/* Body */
 body {
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(to bottom, #d7f2f7, #fff);
   color: #333;
   line-height: 1.6;
 }
-
-/* Navbar */
 .navbar {
   background: #a6dcef;
   padding: 12px 20px;
@@ -30,8 +25,6 @@ body {
 .navbar nav a.active {
   border-bottom: 2px solid #333;
 }
-
-/* Hero */
 .hero {
   text-align: center;
   padding: 30px 20px;
@@ -45,8 +38,6 @@ body {
   font-size: 1.1rem;
   color: #555;
 }
-
-/* Content */
 .content {
   max-width: 800px;
   margin: 30px auto;
@@ -67,8 +58,6 @@ body {
   margin-left: 20px;
   list-style-type: "✨ ";
 }
-
-/* Footer */
 footer {
   text-align: center;
   padding: 15px;

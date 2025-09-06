@@ -1,4 +1,3 @@
-/* Base styling */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
   font-family: 'Segoe UI', sans-serif;
@@ -21,8 +20,6 @@ header p {
   color: #555;
   font-size: 1.1rem;
 }
-
-/* Image card */
 .image-card {
   background: #fff;
   padding: 20px;
@@ -46,8 +43,6 @@ header p {
   font-size: 0.95rem;
   color: #666;
 }
-
-/* Footer */
 footer {
   margin-top: 25px;
   font-size: 0.9rem;

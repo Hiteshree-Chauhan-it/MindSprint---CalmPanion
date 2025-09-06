@@ -1,23 +1,17 @@
-/* General Body Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #B9E2EC;
     color: #333;
 }
-
-/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #7EAAB9; /* RGB(126,170,185) */
+    background: #7EAAB9;
     padding: 10px 20px;
-    /* mix-blend-mode: multiply; */
     
 }
-
-/* Logo */
 .logo-container .logo {
     height: 50px;
     width: auto;
@@ -28,22 +22,18 @@ body {
 #logo{
     mix-blend-mode: multiply;
 }
-/* Site name */
+
 .site-name {
     font-size: 1.8rem;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     color: #333;
 }
-
-/* Nav links */
 .nav-right a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
 }
-
-/* Cat Image */
 .corner-cat-container {
     position: fixed;
     bottom: 10px;
@@ -59,8 +49,6 @@ body {
     height: 100%;
     
 }
-
-/* Feature Gallery */
 .feature-gallery {
     padding: 60px 20px;
     background: linear-gradient(135deg, #d6f2f6 0%, #ffffff 100%);
@@ -82,8 +70,6 @@ body {
     gap: 40px;
     align-items: center;
 }
-
-/* Feature Card */
 .feature-card {
     width: 80%;
     max-width: 900px;
@@ -106,8 +92,6 @@ body {
     box-shadow: 0 15px 30px rgba(0,0,0,0.15);
     background: linear-gradient(180deg, #f8feff, #ffffff);
 }
-
-/* Image wrapper */
 .image-wrapper {
     position: relative;
     display: inline-block;
@@ -125,8 +109,6 @@ body {
 .feature-card:hover .image-wrapper img {
     transform: scale(1.08);
 }
-
-/* Float elements animation */
 .float-elements {
     position: absolute;
     top: 0;
@@ -162,8 +144,6 @@ body {
     50%  { opacity: 0.9; }
     100% { transform: translate(-50%, -120px) scale(1.2); opacity: 0; }
 }
-
-/* Fade in title and description on hover */
 .feature-card h3,
 .feature-card > p {
     opacity: 0;

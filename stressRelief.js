@@ -6,7 +6,7 @@ const centerX = circleContainer.offsetWidth / 2;
 const centerY = circleContainer.offsetHeight;
 
 circles.forEach((btn, i) => {
-  const angle = Math.PI * (i / (circles.length - 1)); // 0 to π
+  const angle = Math.PI * (i / (circles.length - 1));
   const x = centerX + radius * Math.cos(angle) - btn.offsetWidth / 2;
   const y = centerY - radius * Math.sin(angle) - btn.offsetHeight / 2;
   btn.style.left = `${x}px`;
@@ -24,7 +24,6 @@ document.body.appendChild(overlay);
 
 circleButtons.forEach(btn => {
   btn.addEventListener('click', () => {
-    // Move clicked circle to top-left
     circleButtons.forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
 
